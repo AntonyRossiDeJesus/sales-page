@@ -1,0 +1,40 @@
+.botao {
+  @extend %botao;
+
+  &--vermelho {
+    @extend %botao--vermelho;
+  }
+
+  &--amarelo {
+    @extend %botao--amarelo;
+  }
+}
+
+%botao {
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  border: solid 2px #000;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.92rem;
+
+  &:hover {
+    border-width: 3px;
+  }
+}
+
+%botao--vermelho {
+  background-color: $cor-vermelho;
+  border-color: darken($cor-vermelho, 30%);
+  color: #fff;
+}
+
+%botao--amarelo {
+  background-color: $cor-amarelo;
+  border-color: darken($cor-amarelo, 30%);
+  color: #686868;
+}

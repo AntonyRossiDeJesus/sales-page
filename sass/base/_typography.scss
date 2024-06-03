@@ -1,0 +1,40 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: black;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+.titulo {
+  @extend %titulo;
+  font-weight: 700;
+
+  & span {
+    font-weight: 600;
+  }
+}
+
+.subtitulo {
+  @extend %subtitulo;
+}
+
+.img-seta {
+  width: 4rem;
+}
+
+%titulo {
+  font-size: 4.88rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+%subtitulo {
+  font-size: 2.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+}

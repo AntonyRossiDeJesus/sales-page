@@ -1,0 +1,16 @@
+.secao {
+  @include flex($direction: row, $justify: center);
+  overflow: hidden;
+  width: 100%;
+
+  padding: 2rem 2rem;
+}
+
+.container {
+  max-width: 128rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+}

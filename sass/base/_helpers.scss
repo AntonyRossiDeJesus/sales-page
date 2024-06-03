@@ -1,0 +1,53 @@
+$cor-preta: #1a1b1f;
+$cor-branca: #ffffff;
+$cor-cinza-claro: #f1f1f1;
+$cor-cinza: #e1e1e1;
+$cor-cinza-escuro: #4d4d4d;
+$cor-azul-escuro: #1c415c;
+$cor-azul-claro: #256783;
+$cor-amarelo: #fbeb5b;
+$cor-vermelho: #d6242e;
+$cor-vermelho-claro: #db3434;
+
+@mixin flex(
+  $direction: row,
+  $wrap: nowrap,
+  $align: stretch,
+  $justify: start,
+  $gap: 0
+) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin respond($tamanho) {
+  @if $tamanho == big {
+    @media (max-width: 80em) {
+      /*1280*/
+      @content;
+    }
+  } @else if $tamanho == bigmedium {
+    /*1100*/
+    @media (max-width: 68.75em) {
+      @content;
+    }
+  } @else if $tamanho == medium {
+    /*925*/
+    @media (max-width: 57.81em) {
+      @content;
+    }
+  } @else if $tamanho == small {
+    /*767*/
+    @media (max-width: 47.8em) {
+      @content;
+    }
+  } @else if $tamanho == tiny {
+    /*480*/
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+}

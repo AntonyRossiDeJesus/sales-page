@@ -1,0 +1,1598 @@
+.hero {
+  width: 100%;
+  height: 76rem;
+  background-image: url(../img/BG-INICIO-VERMELHO-WEBP.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(small) {
+    height: 110rem;
+    background-image: url(../img/BG-INICIO-VERMELHO-MOBILE-WEBP.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__container {
+    height: 70rem;
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+  }
+
+  &__container--itens {
+    @include flex($direction: column, $justify: center, $gap: 1.6rem);
+    width: 40%;
+    height: 70rem;
+
+    @include respond(big) {
+      width: 50%;
+    }
+
+    @include respond(bigmedium) {
+      width: 60%;
+    }
+
+    @include respond(small) {
+      width: 100%;
+      margin-top: -5.7rem;
+    }
+  }
+
+  &__img {
+    width: 10rem;
+  }
+
+  &__titulo {
+    color: $cor-branca;
+    font-weight: 700;
+
+    @include respond(medium) {
+      font-size: 4.2rem;
+    }
+
+    @include respond(small) {
+      font-size: 3.4rem;
+    }
+    & span {
+      color: $cor-vermelho;
+      font-weight: inherit;
+    }
+  }
+
+  &__texto {
+    color: $cor-branca;
+  }
+
+  &__lista {
+    list-style: none;
+    padding: 0;
+
+    &--itens {
+      @include flex($align: center);
+      color: $cor-branca;
+      margin-bottom: 1rem;
+
+      & i {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        background-image: url(../img/LOGO-CHECK-check.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.beneficios {
+  width: 100%;
+  height: 20rem;
+  background-color: #db3434;
+
+  @include respond(bigmedium) {
+    height: 35rem;
+  }
+
+  &__container {
+    @include flex($align: center, $gap: 1.6rem);
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      @include flex($direction: column, $gap: 1.6rem);
+      width: 32rem;
+    }
+
+    &--itens {
+      @include flex($align: center, $gap: 1.6rem);
+      width: 25%;
+
+      @include respond(bigmedium) {
+        width: 100%;
+      }
+
+      @include respond(small) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__img {
+    width: 6.8rem;
+    height: 6.8rem;
+  }
+
+  &__textos {
+    color: $cor-branca;
+
+    @include respond(bigmedium) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.problemas {
+  @include flex($direction: column, $align: center);
+  width: 100%;
+  height: 257.9rem;
+  gap: 10.7rem;
+  background-image: url(../img/BG-DOIS-WEBP.webp);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include respond(big) {
+    gap: 1rem;
+    height: auto;
+  }
+
+  @include respond(bigmedium) {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include respond(medium) {
+    height: 210rem;
+  }
+
+  @include respond(small) {
+    background-image: url(../img/BG-DOIS-MOBILE-WEBP.webp);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 390rem;
+  }
+
+  &__titulo {
+    @include flex($justify: center);
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 5rem 0;
+    }
+
+    @include respond(bigmedium) {
+      font-size: 1.6rem;
+      width: 90rem;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+
+    &--item {
+      color: $cor-branca;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      @include respond(big) {
+        font-size: 3.8rem;
+      }
+
+      @include respond(bigmedium) {
+        font-size: 3.5rem;
+      }
+
+      @include respond(small) {
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+
+      & span {
+        color: $cor-vermelho;
+        font-weight: inherit;
+      }
+    }
+  }
+
+  &__container {
+    width: 63rem;
+    height: 84.3rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+
+    @include respond(small) {
+      @include flex($direction: column, $gap: 1.6rem);
+      width: 32rem;
+      height: auto;
+    }
+  }
+
+  &__box {
+    @include flex($direction: column, $gap: 1.6rem);
+
+    & img {
+      border-radius: 2.6rem;
+    }
+
+    & p {
+      @include flex($justify: center);
+      color: $cor-branca;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__box2 {
+    align-self: end;
+  }
+
+  &__box4 {
+    align-self: end;
+  }
+
+  &__resultados {
+    @include flex($justify: center);
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 10rem 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+      margin: 10rem 2;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+
+    &--titulo {
+      color: $cor-branca;
+      font-weight: 600;
+      font-size: 4.2rem;
+
+      @include respond(bigmedium) {
+        font-size: 3.5rem;
+      }
+
+      @include respond(small) {
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__conteudo {
+    @include flex($justify: center, $gap: 1.6rem);
+    width: 120rem;
+    position: relative;
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 85rem;
+    }
+
+    @include respond(medium) {
+      width: 69.5rem;
+    }
+
+    @include respond(small) {
+      @include flex($direction: column);
+      width: 32rem;
+      height: auto;
+    }
+
+    &--itens {
+      @include flex($direction: column, $gap: 1.6rem);
+      padding: 2.6rem;
+      width: 33.33%;
+      height: 41rem;
+      border-radius: 2.5rem 2.5rem 0 0;
+      background-image: url(../img/RETANGULO-SESSAO-DEPOIMENTOS-WEBP.webp);
+
+      @include respond(small) {
+        width: 100%;
+      }
+    }
+
+    &--cliente {
+      border-radius: 50%;
+
+      & img {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+
+    &--texto {
+      color: $cor-branca;
+    }
+
+    &--seta {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3.5rem;
+      height: 3.5rem;
+      color: $cor-preta;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    &--seta.direita {
+      left: 100%;
+      transform: translateX(0%);
+      background-image: url(../img/seta-direita.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include respond(small) {
+        display: none;
+      }
+    }
+
+    &--seta.esquerda {
+      left: 0%;
+      transform: translateX(-100%);
+      background-image: url(../img/seta-esquerda.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include respond(small) {
+        display: none;
+      }
+    }
+  }
+
+  &__crescimento {
+    @include flex($align: center, $gap: 1.6rem);
+    height: 63.9rem;
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+      height: 100%;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      flex-flow: column;
+      width: 32rem;
+    }
+
+    &--conteudo {
+      @include flex($direction: column, $gap: 1.8rem);
+      width: 52%;
+
+      @include respond(big) {
+        width: 60%;
+        padding: 2rem;
+      }
+
+      @include respond(small) {
+        width: 100%;
+      }
+    }
+
+    &--titulo {
+      color: $cor-branca;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 4.3rem;
+
+      @include respond(big) {
+        font-size: 4.8rem;
+      }
+
+      @include respond(bigmedium) {
+        font-size: 3.6rem;
+        width: 50rem;
+      }
+
+      @include respond(small) {
+        width: 100%;
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 1;
+      }
+
+      & span {
+        color: $cor-vermelho-claro;
+      }
+    }
+
+    &--paragrafo {
+      color: $cor-branca;
+    }
+  }
+}
+
+.composicao {
+  @include flex($direction: column, $align: center);
+  width: 100%;
+  height: 84.5rem;
+  background-image: url(../img/BG-DNA-WEBP.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(big) {
+    height: 100rem;
+  }
+
+  @include respond(bigmedium) {
+    padding-top: 10rem;
+  }
+
+  @include respond(medium) {
+    height: 140rem;
+  }
+
+  @include respond(small) {
+    height: auto;
+  }
+
+  &__informacoes {
+    @include flex($align: center, $direction: column, $gap: 4.7rem);
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+  }
+
+  &__container {
+    @include flex($direction: column, $gap: 2.6rem);
+    text-align: center;
+    width: 60rem;
+
+    @include respond(small) {
+      width: 100%;
+    }
+  }
+
+  &__paragrafoum {
+    color: $cor-branca;
+  }
+
+  &__titulo {
+    color: $cor-vermelho-claro;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 4.2rem;
+  }
+
+  &__paragrafodois {
+    color: $cor-branca;
+  }
+
+  &__conteudo {
+    @include flex($gap: 1.6rem);
+    width: 120rem;
+
+    @include respond(big) {
+      width: 100rem;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+    }
+
+    @include respond(medium) {
+      @include flex($direction: column, $gap: 1.8rem);
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 100%;
+    }
+  }
+
+  &__carrossel {
+    @include flex($direction: column, $gap: 1.6rem);
+    width: 33.33%;
+    padding: 2.5rem;
+    background: linear-gradient(to top, #db3434, #e79d9d);
+    border-radius: 2rem;
+
+    @include respond(bigmedium) {
+      width: 100%;
+    }
+
+    &--icone {
+      width: 10rem;
+      height: 10rem;
+      background-image: url(../img/ICONE-MUSCULO-ICONE-MUSCULO-VERMELHO.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--icone.dois {
+      width: 10rem;
+      height: 10rem;
+      background-image: url(../img/ICONE-MUSCULO-2-IMAGEM-MUSCULO-BRANCO-VERMELHO.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--icone.tres {
+      width: 10rem;
+      height: 10rem;
+      background-image: url(../img/LOGO-SETA-SUBINDO-IMAGEM-SETA-SUBINDO-SVG.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--titulo {
+      color: $cor-vermelho;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+
+    &--paragrafo {
+      color: $cor-branca;
+    }
+  }
+}
+
+.ofertas {
+  @include flex($direction: column, $align: center, $gap: 10.8rem);
+  width: 100%;
+  height: 183rem;
+  background-image: url(../img/BG-SESSAO-CINCO-WEBP2.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(bigmedium) {
+    gap: 2.8rem;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  @include respond(medium) {
+    height: auto;
+    margin-bottom: 5rem;
+  }
+
+  @include respond(small) {
+    height: auto;
+  }
+
+  &__container {
+    @include flex($align: center, $direction: column, $gap: 5.6rem);
+    width: 124rem;
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 5rem 0;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+  }
+
+  &__titulos {
+    @include flex($align: center, $direction: column, $gap: 1.6rem);
+
+    @include respond(small) {
+      text-align: center;
+    }
+  }
+
+  &__titulo {
+    color: $cor-vermelho;
+  }
+
+  &__conteudo {
+    @include flex();
+    width: 100%;
+    height: 71.4rem;
+
+    @include respond(big) {
+      width: 100rem;
+      height: auto;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.6rem;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 1.6rem;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    &--item.um {
+      @include flex($direction: column, $align: center, $gap: 1.6rem);
+      width: 33.33%;
+      height: 100%;
+      padding: 2.5rem;
+      margin: 2rem;
+      border-radius: 2.5rem;
+      background-color: #f1f1f1;
+
+      @include respond(big) {
+        padding: 1rem;
+      }
+
+      @include respond(bigmedium) {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+      }
+
+      @include respond(small) {
+        grid-column: auto;
+        grid-row: auto;
+        margin-left: 0;
+      }
+
+      & h6 {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+
+        @include respond(big) {
+          font-size: 2.8rem;
+        }
+
+        @include respond(medium) {
+          font-size: 2.4rem;
+        }
+      }
+
+      & img {
+        max-width: 18rem;
+        max-height: 25rem;
+      }
+
+      & .preco {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+        font-weight: 700;
+
+        @include respond(medium) {
+          font-size: 2.4rem;
+        }
+      }
+
+      & .compra__segura {
+        @include flex($gap: 0.6rem, $align: center);
+
+        @include respond(medium) {
+          font-size: 1.4rem;
+        }
+
+        &.icone {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-image: url(../img/ICONE-LUCKICONE-CADEADO-vermelho.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    &--item.dois {
+      @include flex($direction: column, $align: center, $gap: 1.6rem);
+      width: 33.33%;
+      height: 100%;
+      padding: 2.5rem;
+      margin: 2rem;
+      border-radius: 2.5rem;
+      background-color: $cor-vermelho-claro;
+      color: $cor-branca;
+
+      @include respond(big) {
+        padding: 1rem;
+      }
+
+      @include respond(bigmedium) {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      }
+
+      @include respond(small) {
+        width: 100%;
+        grid-column: auto;
+        grid-row: auto;
+        margin-left: 0;
+        position: static;
+        transform: translateY(0%);
+      }
+
+      & h6 {
+        font-size: 3.2rem;
+        color: $cor-amarelo;
+
+        @include respond(big) {
+          font-size: 2.8rem;
+        }
+
+        @include respond(medium) {
+          font-size: 2.4rem;
+        }
+      }
+
+      & img {
+        max-width: 28rem;
+        max-height: 25rem;
+      }
+
+      & .preco {
+        font-size: 3.2rem;
+        color: $cor-amarelo;
+        font-weight: 700;
+
+        @include respond(medium) {
+          font-size: 2.4rem;
+        }
+      }
+
+      & .compra__segura {
+        @include flex($gap: 0.6rem, $align: center);
+
+        @include respond(medium) {
+          gap: 0.1rem;
+          font-size: 1.4rem;
+        }
+
+        &.icone {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-image: url(../img/ICONE-LUCK-ICONE-CADEADO-AMARELO.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &.icone--frete {
+          width: 1.7rem;
+          height: 1.5rem;
+          background-image: url(../img/ICONE-TRUCK-ICONE-FRETE.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    &--item.tres {
+      @include flex($direction: column, $align: center, $gap: 1.6rem);
+      width: 33.33%;
+      height: 100%;
+      padding: 2.5rem;
+      margin: 2rem;
+      border-radius: 2.5rem;
+      background-color: #f1f1f1;
+      color: $cor-preta;
+
+      @include respond(big) {
+        padding: 1rem;
+      }
+
+      @include respond(bigmedium) {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+      }
+
+      @include respond(small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        margin-top: 0;
+      }
+
+      & h6 {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+
+        @include respond(big) {
+          font-size: 2.8rem;
+        }
+
+        @include respond(medium) {
+          font-size: 2.4rem;
+        }
+      }
+
+      & img {
+        max-width: 28rem;
+        max-height: 25rem;
+      }
+
+      & .preco {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+        font-weight: 700;
+
+        @include respond(medium) {
+          font-size: 2.4rem;
+        }
+      }
+
+      & .compra__segura {
+        @include flex($gap: 0.6rem, $align: center);
+
+        @include respond(bigmedium) {
+          gap: 0.1rem;
+          font-size: 1.5rem;
+        }
+
+        @include respond(medium) {
+          font-size: 1.4rem;
+        }
+
+        &.icone {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-image: url(../img/ICONE-LUCKICONE-CADEADO-vermelho.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &.icone--frete {
+          width: 1.7rem;
+          height: 1.5rem;
+          background-image: url(../img/ICONE-TRUCK-ICONE-CAMINHAO-VERMELHO.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  &__escolher {
+    @include flex($direction: column, $align: center, $gap: 10.7rem);
+
+    @include respond(big) {
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+
+    &--titulo {
+      @include flex($justify: center);
+      color: $cor-vermelho;
+      font-size: 3.2rem;
+
+      @include respond(small) {
+        font-size: 2.7rem;
+      }
+    }
+
+    &--container {
+      @include flex($justify: center);
+      width: 79.2rem;
+      padding: 2.5rem;
+
+      background-color: $cor-branca;
+      border-radius: 2.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+      @include respond(medium) {
+        width: 70rem;
+      }
+
+      @include respond(small) {
+        @include flex($direction: column, $align: center, $gap: 16rem);
+        width: 32rem;
+        margin-bottom: 15rem;
+      }
+    }
+
+    &--conteudo {
+      @include flex($direction: column, $align: center, $gap: 1.7rem);
+      width: 50%;
+      margin-top: -6rem;
+
+      @include respond(small) {
+        width: 100%;
+      }
+
+      & img {
+        width: 18.3rem;
+      }
+    }
+
+    &--lista {
+      list-style: none;
+    }
+
+    &--lista-item {
+      @include flex($align: center, $gap: 0.6rem);
+      margin-bottom: 1rem;
+    }
+
+    &--icone {
+      width: 2rem;
+      height: 2rem;
+      background-image: url(../img/LOGO-CHECK-check.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--concorrente {
+      width: 2rem;
+      height: 2rem;
+      background-image: url(../img/LOGO-XICONE-X.svg);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.garantia {
+  width: 100%;
+  height: 51.8rem;
+  background-color: #fa7474;
+  overflow: visible;
+
+  @include respond(small) {
+    height: auto;
+  }
+
+  &__container {
+    @include flex($direction: column, $align: center, $gap: 3.7rem);
+    width: 70rem;
+    margin-top: -8rem;
+    color: $cor-branca;
+
+    @include respond(big) {
+      margin-top: -13rem;
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+
+    & img {
+      width: 25rem;
+
+      @include respond(big) {
+        width: 20rem;
+      }
+    }
+
+    &--titulo {
+      text-align: center;
+      font-size: 4.8rem;
+
+      @include respond(big) {
+        font-size: 3.8rem;
+      }
+    }
+
+    &--paragrafo {
+      text-align: center;
+    }
+  }
+}
+
+.decida {
+  width: 100%;
+  overflow: visible;
+  background-color: #8b2323;
+  color: $cor-branca;
+
+  &__container {
+    @include flex($direction: row, $align: center, $gap: 10rem);
+    padding: 5rem;
+
+    @include respond(big) {
+      @include flex($gap: 5rem);
+      width: 100rem;
+      margin: 0;
+    }
+
+    @include respond(bigmedium) {
+      width: 110rem;
+    }
+
+    @include respond(medium) {
+      flex-flow: column;
+    }
+
+    @include respond(small) {
+      @include flex($direction: column, $align: center, $justify: center);
+      position: static;
+      width: 32rem;
+      height: 65rem;
+      padding: 5rem 0;
+      margin-top: 4rem;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    &--img {
+      width: 30rem;
+      height: auto;
+      margin-top: -15rem;
+      margin-bottom: -15rem;
+
+      @include respond(big) {
+        width: 100%;
+      }
+      @include respond(bigmedium) {
+        width: 90%;
+        height: 30rem;
+      }
+
+      @include respond(medium) {
+        width: 40%;
+      }
+
+      @include respond(small) {
+        position: static;
+        width: 80%;
+      }
+    }
+
+    &--textos {
+      @include respond(medium) {
+        @include flex($direction: column, $align: end);
+      }
+
+      @include respond(small) {
+        @include flex($direction: column, $align: start);
+        margin-top: 15rem;
+      }
+    }
+
+    &--titulo {
+      font-size: 3.2rem;
+
+      @include respond(medium) {
+        @include flex($direction: column, $align: end);
+      }
+
+      @include respond(small) {
+        align-self: center;
+      }
+    }
+
+    & .timer-container {
+      @include flex($gap: 3.8rem);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 2.2rem;
+
+      @include respond(medium) {
+        @include flex($justify: end, $gap: 1.8rem);
+      }
+
+      & span {
+        font-size: 4rem;
+      }
+
+      & .cronometro--texto {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.exclusivas {
+  height: auto;
+  background-image: url(../img/BG-OFERTA-WEBP-VERMELHO.webp);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+
+  @include respond(big) {
+    height: auto;
+  }
+
+  &__container {
+    @include flex($direction: column, $gap: 1.7rem);
+    text-align: center;
+
+    @include respond(big) {
+      @include flex($align: center, $direction: column);
+    }
+
+    @include respond(medium) {
+      width: 75rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+  }
+
+  &__textos {
+    @include flex($direction: column, $gap: 2.7rem);
+    margin-top: 15rem;
+    color: $cor-branca;
+
+    @include respond(bigmedium) {
+      font-size: 3rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__paragrafo {
+    @include respond(small) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__titulo {
+    color: $cor-vermelho-claro;
+  }
+
+  &__conteudo {
+    @include flex($gap: 1.6rem);
+    width: 128rem;
+    margin: 0 2rem;
+    height: auto;
+
+    @include respond(big) {
+      width: 106rem;
+      height: auto;
+    }
+
+    @include respond(bigmedium) {
+      width: 90rem;
+      gap: 1.6rem;
+    }
+
+    @include respond(medium) {
+      width: 100%;
+    }
+
+    @include respond(small) {
+      flex-flow: column;
+    }
+
+    &--item.um {
+      @include flex($direction: column, $align: center, $gap: 1.6rem);
+      width: 33.33%;
+      height: auto;
+      padding: 1.6rem;
+      border-radius: 2.5rem;
+      background-color: #f1f1f127;
+      color: $cor-branca;
+
+      @include respond(bigmedium) {
+        padding: 1;
+        margin: 0;
+      }
+
+      @include respond(small) {
+        width: 100%;
+      }
+
+      & h6 {
+        font-size: 2.9rem;
+        color: $cor-vermelho-claro;
+
+        @include respond(big) {
+          font-size: 2.7rem;
+        }
+      }
+
+      & img {
+        max-width: 18rem;
+        max-height: 25rem;
+      }
+
+      & .preco {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+        font-weight: 700;
+
+        @include respond(bigmedium) {
+          font-size: 3rem;
+        }
+
+        @include respond(medium) {
+          font-size: 2.2rem;
+        }
+      }
+
+      & .compra__segura {
+        @include flex($gap: 0.6rem, $align: center);
+
+        @include respond(medium) {
+          font-size: 1.3rem;
+        }
+
+        &.icone {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-image: url(../../img/ICONE-LUCKICONE-CADEADO-vermelho.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    &--item.dois {
+      @include flex($direction: column, $align: center, $gap: 1.6rem);
+      width: 33.33%;
+      height: 100%;
+      padding: 1.6rem;
+      border-radius: 2.5rem;
+      background-color: $cor-branca;
+      color: $cor-preta;
+
+      @include respond(bigmedium) {
+        padding: 1;
+        margin: 0;
+      }
+
+      @include respond(small) {
+        width: 100%;
+      }
+
+      & h6 {
+        font-size: 2.9rem;
+        color: $cor-vermelho-claro;
+
+        @include respond(big) {
+          font-size: 2.7rem;
+        }
+      }
+
+      & img {
+        max-width: 28rem;
+        max-height: 25rem;
+
+        @include respond(medium) {
+          width: 100%;
+          height: 30rem;
+        }
+      }
+
+      & .preco {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+        font-weight: 700;
+
+        @include respond(bigmedium) {
+          font-size: 3rem;
+        }
+
+        @include respond(medium) {
+          font-size: 2.2rem;
+        }
+      }
+
+      & .botao--amarelo {
+        color: $cor-preta;
+      }
+
+      & .compra__segura {
+        @include flex($gap: 0.6rem, $align: center);
+
+        @include respond(bigmedium) {
+          @include flex($gap: 0.1rem);
+        }
+
+        @include respond(medium) {
+          font-size: 1.3rem;
+        }
+
+        &.icone {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-image: url(../../img/ICONE-LUCK-ICONE-CADEADO-AMARELO.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &.icone--frete {
+          width: 1.7rem;
+          height: 1.5rem;
+          background-image: url(../../img/ICONE-TRUCK-ICONE-FRETE.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          @include respond(medium) {
+            width: 2rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+
+    &--item.tres {
+      @include flex($direction: column, $align: center, $gap: 1.6rem);
+      width: 33.33%;
+      height: auto;
+      padding: 1.6rem;
+      border-radius: 2.5rem;
+      background-color: #f1f1f127;
+      color: $cor-branca;
+
+      @include respond(bigmedium) {
+        padding: 1;
+        margin: 0;
+      }
+
+      @include respond(small) {
+        width: 100%;
+      }
+
+      & h6 {
+        font-size: 2.9rem;
+        color: $cor-vermelho-claro;
+
+        @include respond(big) {
+          font-size: 2.7rem;
+        }
+      }
+
+      & img {
+        max-width: 28rem;
+        max-height: 25rem;
+
+        @include respond(medium) {
+          width: 100%;
+          height: 30rem;
+        }
+      }
+
+      & .preco {
+        font-size: 3.2rem;
+        color: $cor-vermelho-claro;
+        font-weight: 700;
+
+        @include respond(bigmedium) {
+          font-size: 3rem;
+        }
+
+        @include respond(medium) {
+          font-size: 2.2rem;
+        }
+      }
+
+      & .compra__segura {
+        @include flex($gap: 0.6rem, $align: center);
+
+        @include respond(bigmedium) {
+          @include flex($gap: 0.1rem);
+        }
+
+        @include respond(medium) {
+          font-size: 1.3rem;
+        }
+
+        &.icone {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-image: url(../../img/ICONE-LUCKICONE-CADEADO-vermelho.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &.icone--frete {
+          width: 1.7rem;
+          height: 1.5rem;
+          background-image: url(../../img/ICONE-TRUCK-ICONE-CAMINHAO-VERMELHO.svg);
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  @include flex($direction: column, $align: center);
+  height: 65rem;
+  background-color: #390303;
+
+  @include respond(bigmedium) {
+    margin-top: -1rem;
+  }
+
+  @include respond(small) {
+    height: auto;
+  }
+
+  &__container {
+    margin: 0;
+    text-align: center;
+
+    @include respond(big) {
+      width: 100rem;
+      margin-top: -1rem;
+    }
+
+    @include respond(small) {
+      width: 32rem;
+    }
+
+    &--titulo {
+      color: $cor-branca;
+
+      margin-top: 8rem;
+    }
+
+    &--paragrafo {
+      color: $cor-vermelho-claro;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__acordeao {
+    width: 80rem;
+    padding: 5rem;
+    margin: 0;
+
+    @include respond(small) {
+      width: 100%;
+      padding: 5rem 0;
+    }
+  }
+
+  .item-acordeao {
+    border-radius: 3.5rem;
+    background-color: white;
+    box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.2);
+    margin: 1.2rem 0;
+    cursor: pointer;
+  }
+
+  .cabecalho-item {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 2.4rem 3.2rem;
+    border-radius: 3.5rem;
+  }
+
+  .aberto .cabecalho-item {
+    background-color: $cor-vermelho-claro;
+    color: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .cabecalho-item::after {
+    content: "\2bc6";
+  }
+
+  .aberto .cabecalho-item::after {
+    content: "\2bc5";
+  }
+
+  .corpo-item {
+    display: none;
+    padding: 2.4rem 3.2rem;
+
+    background-color: rgb(255, 240, 221);
+
+    border-bottom-left-radius: 3.5rem;
+    border-bottom-right-radius: 3.5rem;
+  }
+
+  .aberto .corpo-item {
+    display: block;
+  }
+}
