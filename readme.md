@@ -8,10 +8,12 @@
 
 <div align="center" >
   <img src="https://skillicons.dev/icons?i=react,html,css,scss,vscode,github,figma,git,javascript" />
+
+  </br>
+    <h2 align="center" >⚡Stats⚡</h2>
 </div>
 
-</br>
-    <h2 align="center" >⚡Stats⚡</h2>
+
 
 </br>
 <div align="center">
