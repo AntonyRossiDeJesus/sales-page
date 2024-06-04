@@ -21,6 +21,7 @@
   <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="SASS" height="30" width="40" src="https://sass-lang.com/assets/img/logos/logo.svg">
+  <img align="center" alt="NODE" height="30" width="40" src="https://www.shutterstock.com/image-vector/node-js-260nw-1021480693.jpg">
 </div>
  </div>
 </br>
