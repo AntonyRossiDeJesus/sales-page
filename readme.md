@@ -1,25 +1,24 @@
+
+
 <h1 align="center">
 <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=olá!+👋;+me+chamo+Antony!;" />
 </h1>
 
 <h2 align="center" >⚒️ Linguagens-Frameworks-Ferramentas ⚒️</h2>
-<br>
+
 <div align="center" >
   <img src="https://skillicons.dev/icons?i=react,html,css,scss,vscode,github,figma,git,javascript" />
 </div>
 
+</br>
+    <h2 align="center" >⚡Stats⚡</h2>
 
-<div align="center">
-<h2> Seja, bem vindo!</h2>
-</div>
 </br>
 <div align="center">
   <div align="center">
   <a href="https://github.com/AntonyRossiDeJesus">
     <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AntonyRossiDeJesus&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
     </div>
-</br>
-    <h2 align="center" >⚡Stats⚡</h2>
 </br>
   <div align="center">
     <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AntonyRossiDeJesus&layout=compact&langs_count=7&theme=dark"/>
